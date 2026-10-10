@@ -21,6 +21,10 @@ stream = client.chat.completions.create(
 )
 
 for chunk in stream:
+    # Some gateways send a final usage-only chunk whose "choices" list is empty.
+    # Skip those instead of indexing, otherwise the SDK raises IndexError.
+    if not chunk.choices:
+        continue
     delta = chunk.choices[0].delta.content
     if delta:
         print(delta, end="", flush=True)
