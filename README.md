@@ -93,6 +93,7 @@ POST /v1/chat/completions
 - Email: support@quantoport.com
 - WhatsApp: [@quantoport](https://wa.me/85255273185)
 - Telegram: [@quantoport](https://t.me/quantoport)
+- Discord: <https://discord.gg/tQtSKMaPe3>
 - Community: <https://quantoport.com/community/>
 
 ## Notes
